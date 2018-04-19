@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mediacontroller_bg">#99000000</color>
+    <color name="mediacontroller_bg_pressed">#ff53c1bd</color>
+    <color name="transparent">#00000000</color>
+    <string name="VideoView_error_button">OK</string>
+    <string name="VideoView_error_text_invalid_progressive_playback">对不起，此视频无效流！
+    </string>
+    <string name="VideoView_error_text_unknown">该视频无法正常播放！.</string>
+    <string name="VideoView_error_title">播放失败！</string>
+    <string name="mediacontroller_play_pause">Play/Pause</string>
+    <string name="permission_group_tools_description">Vitamio包和资源访问.</string>
+    <string name="permission_group_tools_label">Vitamio 工具</string>
+    <string name="permission_receive_messages_description">从Vitamio服务接收所有的广播.</string>
+    <string name="permission_receive_messages_label">接收vitamio 消息</string>
+    <string name="permission_write_providers_description">删除、更新或创建新项目Vitamio提供者.
+    </string>
+    <string name="permission_write_providers_label">写vitamio供应商</string>
+    <string name="vitamio_init_decoders">初始化解码器…</string>
+    <string name="vitamio_library_app_name">Vitamio库</string>
+    <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_dark</item>
+        <item name="android:minHeight">13dip</item>
+        <item name="android:maxHeight">13dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16dip</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+    <style name="MediaController_Text">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

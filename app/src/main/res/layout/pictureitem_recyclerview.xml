@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="1dp">
+
+    <LinearLayout
+        android:id="@+id/pc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/picture_display" />
+
+        <ImageView
+            android:id="@+id/picture_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/android" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pc"
+        android:background="#eae8e8"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/users_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="@string/picture_display" />
+
+        <TextView
+            android:id="@+id/pc_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/users_item"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="@string/picture_display" />
+
+        <TextView
+            android:id="@+id/pc_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/pc_style"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:padding="2dp"
+            android:text="@string/picture_display" />
+
+        <ImageView
+            android:id="@+id/grade_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/pc_grade"
+            android:layout_margin="5dp"
+            android:src="@drawable/nice" />
+        <TextView
+            android:id="@+id/pc_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="@string/picture_display"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "E:\\StudioAndroid\\MyProject\\vitamio\\build\\intermediates\\res\\merged\\androidTest\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "E:\\StudioAndroid\\MyProject\\vitamio\\build\\intermediates\\bundles\\debug\\res\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,8,9,10,11,12,13,14,15,17,18,19,20,30",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,110,173,221,275,370,439,495,561,639,707,794,869,964,1037,1095,1157,1804",
+                        "endLines": "2,3,4,5,7,8,9,10,11,12,13,14,16,17,18,19,29,34",
+                        "endColumns": "54,62,47,53,13,68,55,65,77,67,86,74,13,72,57,61,12,12",
+                        "endOffsets": "105,168,216,270,365,434,490,556,634,702,789,864,959,1032,1090,1152,1799,2009"
+                    }
+                }
+            ]
+        }
+    ]
+}

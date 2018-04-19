@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/head_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6aefe8">
+        <ImageView
+            android:id="@+id/msg_break"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/title_arrow_normal_smoba"/>
+        <TextView
+            android:id="@+id/title_help_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#363636"
+            android:textSize="25sp"
+            android:text="你的用户信息"/>
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:weightSum="1">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.43">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_button_shape"
+                    android:text="用户名" />
+
+                <EditText
+                    android:id="@+id/userName_text"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/phone_edittext"
+                    android:hint="请填写用户名"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/userPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/text_button_shape"
+                    android:text="密码"
+                    android:textAlignment="center" />
+
+                <EditText
+                    android:id="@+id/userPassword_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/phone_edittext"
+                    android:hint="请填写用户名密码"
+                    android:maxLines="1"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <LinearLayout
+                android:id="@+id/foot_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_marginTop="100dp">
+                <TextView
+                    android:id="@+id/change"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/register_button_shape"
+                    android:elevation="20dp"
+                    android:padding="20dp"
+                    android:text="修改"
+                    android:textAlignment="center" />
+                <TextView
+                    android:id="@+id/sure_ok"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/register_button_shape"
+                    android:elevation="20dp"
+                    android:padding="20dp"
+                    android:text="确定"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:id="@+id/user_loginbt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/login_button_shape"
+                    android:elevation="20dp"
+                    android:padding="20dp"
+                    android:text="登录"
+                    android:textAlignment="center" />
+            </LinearLayout>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>

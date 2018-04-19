@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/bgm_default"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_backgroup_image"
+        android:visibility="gone"/>
+    <graduate.qk.com.myproject.Tool.MyScroolView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d4d2d2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="最火热圈子" />
+
+        <TextView
+            android:id="@+id/all_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/all_next"
+            android:text="全部圈子" />
+
+        <ImageView
+            android:id="@+id/all_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/next_hover" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/rc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/hrc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/like_dz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rc"
+        android:gravity="center"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/chat_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white_30"
+            android:text="—推荐话题—"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+        <graduate.qk.com.myproject.Tool.MyWaveView
+            android:id="@+id/wave_view"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@color/blue_30"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/chat_style"/>
+    </RelativeLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="fill_parent"
+          android:layout_marginTop="2dp">
+
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/look_rc"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#ffffff">
+
+          </android.support.v7.widget.RecyclerView>
+      </LinearLayout>
+  </LinearLayout>
+    </graduate.qk.com.myproject.Tool.MyScroolView>
+</RelativeLayout>

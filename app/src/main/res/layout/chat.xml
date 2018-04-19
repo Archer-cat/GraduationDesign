@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- 定义一个文本框，它用于显示来自服务器的信息 -->
+    <TextView
+        android:id="@+id/chatsno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/orange_trans"
+        android:background="@color/gray_light"
+        android:hint="@string/ta_quanzi"/>
+    <TextView
+        android:id="@+id/show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/chatsno"
+        android:layout_above="@+id/bottom_layout"
+        android:gravity="top"
+        android:background="@drawable/waterglass"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@color/white_80"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_light"
+        android:orientation="horizontal">
+        <!-- 定义一个文本框，它用于接收用户的输入 -->
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:lines="2" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:text="发送" />
+    </LinearLayout>
+</RelativeLayout>

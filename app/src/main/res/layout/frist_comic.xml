@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <graduate.qk.com.myproject.Tool.MyScroolView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal">
+
+                <ViewFlipper
+                    android:id="@+id/flipper_comic"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1">
+
+                </ViewFlipper>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="200dip"
+                    android:layout_alignParentLeft="true"
+                    android:alpha="0.8"
+                    android:background="#e9e8e8"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/pre_comic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/prev"
+                        android:onClick="pre_onclick" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="30dp"
+                    android:layout_height="200dip"
+                    android:layout_alignParentRight="true"
+                    android:alpha="0.8"
+                    android:background="#e9e8e8"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/next_comic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/next"
+                        android:onClick="next_onclick" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/text_img_comic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.8"
+                    android:background="@color/gray"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textStr_comic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="marquee"
+                        android:focusable="true"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:singleLine="true"
+                        android:text="这是XX图片"
+                        android:textSize="20dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/nice_work1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:id="@+id/month_table1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/month_top1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btv" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="月票榜"
+                        android:textColor="#f9d506" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hot_table1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/hot_top1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btv" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="最热榜"
+                        android:textColor="#f56117" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/newperson_table1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/news_top1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/btv" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="新人榜"
+                        android:textColor="#5fea6f" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/comicrecyclerList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </graduate.qk.com.myproject.Tool.MyScroolView>
+</LinearLayout>

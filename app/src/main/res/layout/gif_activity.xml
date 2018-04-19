@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="graduate.qk.com.myproject.Tool.Giftools.GifPlay">
+<RelativeLayout
+    android:id="@+id/gif_space"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="#d2c8c8">
+
+    <graduate.qk.com.myproject.Tool.Giftools.GifImageView
+        android:id="@+id/gif"
+        android:layout_width="480dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        app:end_last_frame="true"
+        app:play_count="1"
+        />
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/gif"
+        android:layout_alignBottom="@+id/gif"
+        android:layout_margin="12dp"/>
+    <SeekBar
+        android:id="@+id/seek"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gif"
+        android:layout_marginTop="2dp"
+        android:max="100"/>
+
+    <Button
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_toLeftOf="@+id/percent"
+        android:layout_alignBottom="@+id/gif"
+        android:background="@drawable/gifnext"
+        android:elevation="5dp"
+        android:onClick="Next"
+        android:textSize="8dp"/>
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gif_space">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="palycycle"
+            android:text="循环播放"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="palyone"
+            android:text="单次播放"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="palyreverse"
+            android:text="倒叙播放"
+            />
+
+        <Button
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="pause"
+            android:text="暂停"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
